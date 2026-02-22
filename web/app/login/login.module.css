@@ -1,0 +1,149 @@
+/* web/app/login/login.module.css */
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3F2ED !important; /* Home page beige */
+    color: #1a1a1a !important;
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* THE MINI HERO CARD */
+  .loginCard {
+    position: relative;
+    width: 90%;
+    max-width: 480px;
+    /* Dark textured background */
+    background-color: #0A0A0B;
+    border: 12px solid #ffffff;
+    border-radius: 30px;
+    padding: 4rem 2.5rem;
+    text-align: center;
+    color: white !important;
+    
+    /* The Signature Tilt */
+    transform: rotate(-3deg);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s ease;
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Straighten and lift on hover */
+  .loginCard:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  /* Grid Overlay */
+  .gridOverlay {
+    position: absolute; 
+    inset: 0; 
+    opacity: 0.1;
+    background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+  
+  /* Typography */
+  .logo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  .subtitle {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 3rem;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* The Big GitHub Button */
+  .githubBtn {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .githubBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    background-color: #f0f0f0;
+  }
+  
+  .githubBtn:active {
+    transform: translateY(0);
+  }
+  
+  /* Terms Text */
+  .terms {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+  }
+  
+  /* Back Link */
+  .backLink {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    transition: opacity 0.2s;
+    z-index: 20;
+  }
+  .backLink:hover {
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .backLink {
+      top: 2rem;
+      left: 2rem;
+      transform: none;
+    }
+  }

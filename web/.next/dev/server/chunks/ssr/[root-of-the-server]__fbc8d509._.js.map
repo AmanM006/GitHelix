@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/cheer/OneDrive/Desktop/projects/githubjanitor/web/app/settings/page.tsx"],"sourcesContent":["// app/settings/page.tsx\r\nimport { redirect } from 'next/navigation';\r\n\r\nexport default function SettingsIndex() {\r\n  redirect('/settings/profile');\r\n}"],"names":[],"mappings":";;;;AAAA,wBAAwB;AACxB;AAAA;;AAEe,SAAS;IACtB,IAAA,iMAAQ,EAAC;AACX"}}]
+}

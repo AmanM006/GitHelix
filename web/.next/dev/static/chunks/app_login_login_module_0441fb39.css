@@ -1,0 +1,164 @@
+/* [project]/app/login/login.module.css [app-client] (css) */
+.login-module__Si-P0q__container {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Times New Roman, Times, serif;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  color: #1a1a1a !important;
+  background-color: #f3f2ed !important;
+}
+
+.login-module__Si-P0q__loginCard {
+  text-align: center;
+  z-index: 10;
+  background-color: #0a0a0b;
+  border: 12px solid #fff;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 480px;
+  padding: 4rem 2.5rem;
+  transition: transform .5s cubic-bezier(.25, 1, .5, 1), box-shadow .5s;
+  display: flex;
+  position: relative;
+  transform: rotate(-3deg);
+  box-shadow: 0 40px 80px -20px #0006;
+  color: #fff !important;
+}
+
+.login-module__Si-P0q__loginCard:hover {
+  transform: rotate(0)scale(1.02);
+  box-shadow: 0 50px 100px -20px #00000080;
+}
+
+.login-module__Si-P0q__cardGlowBlue {
+  filter: blur(80px);
+  pointer-events: none;
+  background: #2563eb40;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+}
+
+.login-module__Si-P0q__cardGlowPurple {
+  filter: blur(80px);
+  pointer-events: none;
+  background: #9333ea33;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+}
+
+.login-module__Si-P0q__gridOverlay {
+  opacity: .1;
+  pointer-events: none;
+  background-image: linear-gradient(#fff 1px, #0000 1px), linear-gradient(90deg, #fff 1px, #0000 1px);
+  background-size: 40px 40px;
+  position: absolute;
+  inset: 0;
+}
+
+.login-module__Si-P0q__logo {
+  letter-spacing: -.02em;
+  z-index: 2;
+  color: #fff;
+  margin-bottom: .5rem;
+  font-family: Times New Roman, Times, serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.login-module__Si-P0q__subtitle {
+  color: #fff9;
+  z-index: 2;
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.login-module__Si-P0q__githubBtn {
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-flex;
+  position: relative;
+}
+
+.login-module__Si-P0q__githubBtn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px #fff3;
+}
+
+.login-module__Si-P0q__githubBtn:active {
+  transform: translateY(0);
+}
+
+.login-module__Si-P0q__terms {
+  color: #ffffff4d;
+  z-index: 2;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  font-size: .75rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.login-module__Si-P0q__backLink {
+  color: #1a1a1a;
+  z-index: 20;
+  align-items: center;
+  gap: .5rem;
+  font-family: Times New Roman, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-decoration: none;
+  transition: opacity .2s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  transform: translateY(-50%);
+}
+
+.login-module__Si-P0q__backLink:hover {
+  opacity: .7;
+}
+
+@media (max-width: 768px) {
+  .login-module__Si-P0q__backLink {
+    top: 2rem;
+    left: 2rem;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=app_login_login_module_0441fb39.css.map*/
