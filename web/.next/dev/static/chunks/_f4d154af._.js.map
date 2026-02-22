@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/cheer/OneDrive/Desktop/projects/githubjanitor/web/app/page.tsx"],"sourcesContent":["\"use client\";\nimport { useSession } from \"next-auth/react\";\nimport { useRouter } from \"next/navigation\";\nimport { useEffect } from \"react\";\n\nexport default function Home() {\n  const { status } = useSession();\n  const router = useRouter();\n\n  useEffect(() => {\n    if (status === \"authenticated\") {\n      router.push(\"/dashboard\");\n    } else if (status === \"unauthenticated\") {\n      router.push(\"/login\");\n    }\n  }, [status, router]);\n\n  return <div className=\"p-10 text-white bg-black h-screen\">Loading GitHelix...</div>;\n}"],"names":[],"mappings":";;;;;AACA;AACA;AACA;;;AAHA;;;;AAKe,SAAS;;IACtB,MAAM,EAAE,MAAM,EAAE,GAAG,IAAA,+JAAU;IAC7B,MAAM,SAAS,IAAA,kJAAS;IAExB,IAAA,0KAAS;0BAAC;YACR,IAAI,WAAW,iBAAiB;gBAC9B,OAAO,IAAI,CAAC;YACd,OAAO,IAAI,WAAW,mBAAmB;gBACvC,OAAO,IAAI,CAAC;YACd;QACF;yBAAG;QAAC;QAAQ;KAAO;IAEnB,qBAAO,6LAAC;QAAI,WAAU;kBAAoC;;;;;;AAC5D;GAbwB;;QACH,+JAAU;QACd,kJAAS;;;KAFF"}},
-    {"offset": {"line": 58, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/cheer/OneDrive/Desktop/projects/githubjanitor/web/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
-}
