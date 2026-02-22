@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 from github import Github
-# --- CHANGED: Swapped HuggingFace for Google GenAI ---
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 # -----------------------------------------------------
 from langchain_pinecone import PineconeVectorStore
@@ -11,7 +10,7 @@ from langchain_core.documents import Document
 load_dotenv()
 
 # Configuration
-REPO_NAME = "AmanM006/Appointment-AI-Slack"  # <--- REPLACE THIS WITH YOUR REPO!
+REPO_NAME = os.getenv("GITHUB_REPO")  
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")    
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
